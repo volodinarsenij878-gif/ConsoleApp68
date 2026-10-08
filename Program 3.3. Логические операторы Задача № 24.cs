@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Program24
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Исходное выражение: true ^ false ^ true
+            bool step1 = true ^ false;      // true (разные значения → true)
+            bool res = step1 ^ true;        // false (одинаковые значения → false)
+
+            Console.WriteLine($"Шаг 1: true ^ false = {step1}");
+            Console.WriteLine($"Шаг 2: {step1} ^ true = {res}");
+            Console.WriteLine($"\n Итоговое выражение: true ^ false ^ true = {res}");
+        }
+    }
+}
